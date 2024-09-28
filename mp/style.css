@@ -1,0 +1,73 @@
+
+.input-style {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.input-style:focus {
+    border-color: #000000; 
+    outline: none; 
+}
+
+body { 
+    font-family: Arial, sans-serif; 
+}
+#map{
+    width: 61%;
+    height: 93vh;
+}
+#controls { 
+    margin: 20px;
+     width: 37%;
+}
+.customMarkerClass {
+    height: 30px;
+    width: 40px;
+    background-image: url('path/to/your/custom-marker.png');
+    background-size: cover;
+}
+#controls div {
+    margin-bottom: 15px; 
+}
+.con{
+    display: flex;
+
+}
+@media (max-width: 543px) {
+    .con {
+        flex-direction: column;
+    }
+    #map{
+        width: 100%;
+        height: 60vh;
+    }
+    #controls { 
+        width: 90%;
+        margin: 5%
+    };
+}
+    .button {
+        display: flex;
+        justify-content: center;
+    }
+    .label-style {
+        font-size: 16px;
+        margin-bottom: 5px; 
+        display: block; 
+        color: #333; 
+    }
+    @media(min-width:800px)
+    {
+        .container-control{
+            display: flex;
+            align-items: center; 
+            margin-bottom: 15px;
+        }
+        .label-style {
+            width: 27%;
+        }
+    }
